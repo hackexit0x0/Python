@@ -90,7 +90,9 @@ body {
 <span class="badge bg-info">{{ asset.device_status }}</span>
 </td>
 
-<td>₹ {{ asset.price }}</td>
+<td {% if asset.price >= 1000 %} style="background-color:#FFB8B8; color:white;" {% endif %}>
+    ₹ {{ asset.price }}
+</td>
 <td>{{ asset.discount }}%</td>
 
 <td>
