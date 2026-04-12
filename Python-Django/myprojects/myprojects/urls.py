@@ -10,4 +10,10 @@ urlpatterns = [
     path('', home, name="Home"),
 
     path("test/", test, name="test"),
+
+    path('register/', register, name='register'),
+    path('login/', user_login, name='login'),
+    path('logout/', user_logout, name='logout'),
+    path('home/', home, name='home'),
 ]
+    
